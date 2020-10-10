@@ -1,0 +1,6 @@
+.storybook
+public
+src
+stories
+.npmrc
+.*

@@ -5,8 +5,12 @@
   "main": "out",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build:trash&&npm run build:lib",
+    "build:lib": "cross-env BABEL_ENV=build babel src --out-dir lib",
+    "build:trash": "trash lib",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "postinstall":"npm run build"
   },
   "keywords": [],
   "author": "",
@@ -20,5 +24,9 @@
     "babel-loader": "^8.1.0",
     "react-is": "^16.13.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@babel/cli": "^7.11.6",
+    "cross-env": "^7.0.2",
+    "trash-cli": "^3.1.0"
+  }
 }
