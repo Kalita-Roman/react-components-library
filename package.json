@@ -9,8 +9,7 @@
     "build:lib": "cross-env BABEL_ENV=build babel src --out-dir lib",
     "build:trash": "trash lib",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "postinstall":"npm run build"
+    "build-storybook": "build-storybook"
   },
   "keywords": [],
   "author": "",
