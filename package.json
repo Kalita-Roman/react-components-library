@@ -4,7 +4,6 @@
   "description": "",
   "main": "lib",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run trash&&npm run build:tsc",
     "build:tsc": "tsc",
     "trash": "trash lib",
